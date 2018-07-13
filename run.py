@@ -11,7 +11,8 @@ def index():
 
 @app.route('/about')
 def about():
-    return render_template('about.html', page_title="About")
+    number_list = [1,2,3,4,5,6]
+    return render_template('about.html', page_title="About", numbers=number_list)
 
 @app.route('/careers')
 def careers():
